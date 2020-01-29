@@ -1,0 +1,202 @@
+:root{
+    --color-primary: #FA9623;
+    --color-light-grey: #D8D3CB;
+    --color-white: #FBFBFB;
+    --color-black: black;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+
+/* generale ********************** */
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ol, li{
+    list-style: none;
+}
+
+
+/* Navbar ************************ */
+
+.nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 10rem;
+    background-color: var(--color-white);
+    box-shadow: 0 0 10px rgba(0,0,0,.15); 
+    z-index: 999;
+}
+
+.pt-70{
+    padding-top: 7rem;
+}
+
+
+
+/* header ************************ */
+
+.header{
+    width: 85%;
+    height: 70vh;
+    background-color: var(--color-black);
+    margin: auto;
+}
+
+/* service *********************** */
+
+.section-service{
+    padding-top: 10rem;
+}
+
+.section-service h1{
+    font-size: 4.7rem;
+    font-weight: 70rem;
+    color: var(--color-primary);
+}
+
+.section-service hr{
+    width: 12rem;
+    height: .4rem!important;
+    background-color: var(--color-light-grey);
+    border-radius: 4.5rem;
+}
+
+
+.section-service-card{
+    height: 25rem;
+    background-color: var(--color-white);
+    border: .1rem solid var(--color-light-grey);
+    transition: .4s;
+}
+
+.section-service-card:hover{
+    transform: scale(1.04);
+    transform: translateY(-12px);
+    transition: .4s;
+}
+
+/* About ************************* */
+
+.about{
+    width: 130rem;
+    min-height: 50rem;
+    margin: 12rem auto 0;
+    border: 1px solid #b9b6b6;
+}
+
+.service-about-image{
+    height: 60rem;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -6rem;
+    border-radius: 2.4rem;
+    box-shadow: 0 1px 14px 1px rgba(0, 0, 0, 0.05);
+
+}
+
+.service-about-image img{
+    border-radius: 2.4rem;
+}
+
+.service-about-description {
+    padding: 2.4rem;
+}
+
+.service-about-description h3{
+    font-size: 3.8rem;
+}
+
+.service-about-description p{
+    font-size: 1.7rem;
+}
+
+/* reference ************************* */
+
+.section-reference{
+    min-height: 25rem;
+    margin: 15rem 0;
+    background-color: var(--color-white);
+    padding: 6rem;
+}
+
+.section-reference_left h2{
+    font-size: 3.7rem;
+    font-weight: 50rem;
+    color: var(--color-primary);
+    text-transform: capitalize;
+}
+
+.divider{
+    width: 10rem;
+    height: 3px;
+    background-color: var(--color-light-grey);
+    margin-top: 0;
+    border-radius: 30px;
+}
+
+.section-reference_left p{
+    font-size: 1.7rem;
+    margin-top: 4rem;
+}
+
+.sectiopn-reference__right{
+    height: 15rem;
+    background-color: white;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Team *****************************/ 
+
+.section-teams h2{
+    font-size: 3.7rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.card-team{
+    min-height: 13rem;
+    padding: 2rem;
+    box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    transition: .4s all;
+}
+
+.card-team:hover{
+    min-height: 13rem;
+    padding: 2rem;
+    box-shadow: none;
+}
+
+.card-team p{
+    color: rgb(146, 145, 145);
+    font-size: 1.2rem;
+}
