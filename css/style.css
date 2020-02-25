@@ -200,3 +200,28 @@ ol, li{
     color: rgb(146, 145, 145);
     font-size: 1.2rem;
 }
+
+
+/* contact ************************* */
+
+.section-contact{
+    margin-top: 5rem;
+}
+
+.contact-description h2{
+    font-size: 3.7rem;
+    font-weight: bold;
+}
+
+.contact-card{
+    display: flex;
+    align-items: center;
+}
+
+.card-icon{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    margin-bottom: 2rem;
+}
