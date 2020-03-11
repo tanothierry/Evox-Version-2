@@ -8,6 +8,8 @@
 
     <!--Mes styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- favicon -->
@@ -37,7 +39,11 @@
     </nav>
 
     <header class="header">
-
+        <div class="owl-carousel">
+            <div class="slide"></div>
+            <div class="slide1"></div>
+            <div class="slide2"></div>
+          </div>
     </header>
 
     <div class="section-service">
@@ -46,17 +52,43 @@
             <hr>
             <div class="row textr-center pt-70">
                 <div class="col-3 ">
-                    <div class="section-service-card"></div>
+                    <div class="section-service-card">
+                        <div class="text-center mt-5">
+                            <img src="images/evox-yannick-goul-icon_arrow.png" alt="img-fluid">
+                        </div>
+                        <p>
+                            EVOX Trading est un opérateur VoIP spécialisé dans la fourniture de services de terminaison vers l'Afrique et le Moyen-Orient.
+                        </p>
+                    </div>
                 </div>
                 <div class="col-3 ">
-                    <div class="section-service-card"></div>
+                    <div class="section-service-card">
+                        <div class="text-center mt-5">
+                            <img src="images/evox-yannick-goul-icon_satelite.png" alt="img-fluid">
+                        </div>
+                        <p>
+                            Ses clients sont les grands opérateurs télécoms et MVNO souhaitant optimiser leurs coûts d'achats de minutes.
+                        </p>
+                    </div>
                 </div>
                 <div class="col-3 ">
-                    <div class="section-service-card"></div>
+                    <div class="section-service-card">
+                        <div class="text-center mt-5">
+                            <img src="images/evox-yannick-goul-icon_world.png" alt="img-fluid">
+                        </div>
+                        <p>
+                            EVOX Trading se positionne comme opérateur de routes difficiles.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="col-3 ">
-                    <div class="section-service-card"></div>
+                    <div class="section-service-card">
+                        <div class="text-center mt-5">
+                            <img src="images/evox-yannick-goul-icon_paper.png" alt="img-fluid">
+                        </div>
+                        <p>EVOX Trading propose des interconnexions à tarifs compétitifs via des opérateurs locaux.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -258,9 +290,34 @@
     </footer>
 
 
-
     <!--Mes script -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+       $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            autoplay:true,
+            autoplayTimeout:3000,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:1,
+                    nav:true
+                },
+                1000:{
+                    items:1,
+                    nav:true,
+                    loop:true
+                }
+            }
+        })
+    </script>
 </body>
 </html>

@@ -64,8 +64,34 @@ ol, li{
 .header{
     width: 85%;
     height: 70vh;
-    background-color: var(--color-black);
     margin: auto;
+}
+
+.slide,
+.slide1,
+.slide2{
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+}
+
+.slide{
+    background: linear-gradient(rgba(250, 150, 35, 0.329), rgba(0, 0, 0, 0.712)), url('../images/feb-voip4.jpg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+
+.slide1{
+    background: linear-gradient(rgba(250, 150, 35, 0.329), rgba(0, 0, 0, 0.911)), url('../images/network-3148727_1280.jpg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.slide2{
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(51, 255, 0);
 }
 
 /* service *********************** */
@@ -93,6 +119,13 @@ ol, li{
     background-color: var(--color-white);
     border: .1rem solid var(--color-light-grey);
     transition: .4s;
+    padding: 0 1rem;
+}
+
+.section-service-card p{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 2.5rem;
 }
 
 .section-service-card:hover{
@@ -373,13 +406,6 @@ ol, li{
     cursor:  pointer;
 }
 
-.footer-scroll:hover{
-    transform: scale(2);
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 .icon-arrowTop{
     transform: rotate(90deg);
