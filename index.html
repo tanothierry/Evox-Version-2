@@ -32,7 +32,7 @@
 <body>
     
 
-    <nav class="nav sticky">
+    <nav class="nav sticky" id="navbar">
 
     </nav>
 
@@ -185,9 +185,10 @@
 
     <div class="section-contact">
         <div class="container">
-            <div class="Col-lg-12">
+            <div class="Col-lg-12 section-contact_title">
                 <h2>Contactez-Nous</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo laudantium tempore, mollitia id ratione debitis?</p>
+                <p>Si vous souhaitez nous contacter, veuillez remplir le formulaire suivant :</p>
+                <hr class="divider">
             </div>
             <div class="row">
                 <div class="col-6">
@@ -211,6 +212,9 @@
                             <p>evoxtrading@gmail.com</p>
                         </div>
                     </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3557.259635897936!2d2.345503716002995!3d48.87010860783508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x47e66e166840b4d9%3A0x8fe621eaf4a3db25!2s33%20Rue%20Poissonni%C3%A8re%2C%2075002%20Paris%2C%20France!3m2!1d48.870105099999996!2d2.3476923999999997!4m3!3m2!1d48.8701192!2d2.3477139!5e1!3m2!1sfr!2sci!4v1583916588726!5m2!1sfr!2sci" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                    
+                    </div>
                 </div>
                 <div class="col-6">
                     <div class="contact-form">
@@ -231,6 +235,11 @@
                                 <label for="">Message :</label>
                                 <textarea name="" id="" cols="30" rows="10"></textarea>
                             </div>
+                            <div class="mt-5">
+                                <a href="#">
+                                    <button type="submit" class="btnLinks">Envoyer</button>
+                                </a>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -238,7 +247,15 @@
         </div>
     </div>
 
-    <div style="height: 600rem;"></div>
+    <!-- <div style="height: 600rem;"></div> -->
+    <footer class="footer">
+        <p> Copyright &copy; tous droits reservé Evox Trading</p>
+        <div class="footer-scroll">
+            <a href="#navbar">
+                <img src="images/back.svg" alt="arrow-top" class="img-fluid icon-arrowTop">
+            </a>
+        </div>
+    </footer>
 
 
 
